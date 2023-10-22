@@ -12,7 +12,7 @@ public class CalculateAverageService {
         int avgA = victimA.getYearOfDeath() - victimA.getAgeAtDeath();
         int avgB = victimB.getYearOfDeath() - victimB.getAgeAtDeath();
 
-        return (double) (avgA + avgB) / 2;
+        return Double.valueOf(avgA + avgB) / Double.valueOf(2);
     }
 
     private void validateRequest(VictimRequest victimA, VictimRequest victimB) {
